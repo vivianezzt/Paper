@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/records.css">
+    <!--Javascript-->
+    <script src="./js/main.js" defer></script>
+    <title>Cadastro de clientes</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table class="records">
+            <thead class="thead">
+                <th>Id</th>
+                <th>Admin</th>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Data de Nascimento</th>
+                <th>Data Cadastro</th>
+                <th>Ações</th>
+            </thead>
+            <!--dados dos Clientes-->
+
+            <tbody>
+                <td>01</td>
+                <td>Admin</td>
+                <td><img src="./img/janiele.jpg" alt="janielle"></td>
+                <td>Janielle</td>
+                <td>(81)9905-2922</td>
+                <td>janielle@janielle.com</td>l.com</td>
+                <td>01/01/1990</td>
+                <td>09/11/2022</td>
+                <td>
+                    <button type="button" class="button green">Editar</button>
+                    <button type="button" class="button red">Deletar</button>
+                </td>
+            </tbody>
+            <!--Inserção de dados dos clientes-->
+            <tbody>
+                <td>01</td>
+                <td>Admin</td>
+                <td><img src="./img/samuel.jpg" alt="samuel"></td>
+                <td>Samuel</td>
+                <td>319477-5990</td>
+                <td>samuel@samuel.com</td>
+                <td>01/01/1990</td>
+                <td>09/11/2022</td>
+                <td>
+                    <button type="button" class="button green">Editar</button>
+                    <button type="button" class="button red">Deletar</button>
+                </td>
+            </tbody>
+
+            <tbody>
+                <td>01</td>
+                <td>Admin</td>
+                <td><img src="./img/viviane.jpg" alt="viviane"></td>
+                <td>Viviane</td>
+                <td>(32)9937-1052)</td>
+                <td>viviane@viviane.com</td>
+                <td>29/04/1984</td>
+                <td>21/04/1988</td>
+                <td>
+                    <button type="button" class="button green">Editar</button>
+                    <button type="button" class="button red">Deletar</button>
+                </td>
+            </tbody>
+
+       
+            <!--Fim dados dos Clientes-->
+
+        </table>
+
+        <!--Inserção de Dados do Cliente-->
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="image" src="./img/avatar.svg" class="modal-field" placeholder="Imagem">
+                    <input type="number" class="modal-field" placeholder="Id">
+                    <input type="email" class="modal-field" placeholder="Admin">
+                    <input type="text" class="modal-field" placeholder="Nome">
+                    <input type="tel" class="modal-field" placeholder="Telefone">
+                    <input type="date" class="modal-field" placeholder="Nascimento">
+                    <input type="date" class="modal-field" placeholder="Data Cadastro">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Janielle | Samuel | Viviane - ano 2022
+    </footer>
+</body>
+</html>
